@@ -20,6 +20,7 @@ using Microsoft.AspNetCore.DataProtection;
 using MagalitiIdentityServer.Shared.Dtos;
 using MagalitiIdentityServer.Shared.Dtos.Identity;
 using MagalitiIdentityServer.Shared.Helpers;
+using Microsoft.IdentityModel.Logging;
 
 namespace MagalitiIdentityServer.Admin
 {
@@ -111,8 +112,8 @@ namespace MagalitiIdentityServer.Admin
 
             app.UseStaticFiles();
 
+            IdentityModelEventSource.ShowPII = true;
             UseAuthentication(app);
-
             // Use Localization
             app.ConfigureLocalization();
 
