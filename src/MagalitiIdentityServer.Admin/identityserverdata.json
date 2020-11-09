@@ -81,7 +81,7 @@
             {
                 "ClientId": "AdminClientId",
                 "ClientName": "AdminClientId",
-                "ClientUri": "http://localhost:6000",
+                "ClientUri": "https://authadmin.magaliti.com",
                 "AllowedGrantTypes": [
                     "authorization_code"
                 ],
@@ -92,14 +92,14 @@
                     }
                 ],
                 "RedirectUris": [
-                    "http://localhost:6000/signin-oidc"
+                    "https://authadmin.magaliti.com/signin-oidc"
                 ],
-                "FrontChannelLogoutUri": "http://localhost:6000/signout-oidc",
+                "FrontChannelLogoutUri": "https://authadmin.magaliti.com/signout-oidc",
                 "PostLogoutRedirectUris": [
-                    "http://localhost:6000/signout-callback-oidc"
+                    "https://authadmin.magaliti.com/signout-callback-oidc"
                 ],
                 "AllowedCorsOrigins": [
-                    "http://localhost:6000"
+                    "https://authadmin.magaliti.com"
                 ],
                 "AllowedScopes": [
                     "openid",
@@ -117,13 +117,13 @@
                 "RequireClientSecret": false,
                 "RequirePkce": true,
                 "RedirectUris": [
-                    "http://localhost:7000/swagger/oauth2-redirect.html"
+                    "https://authadminapi.magaliti.com/swagger/oauth2-redirect.html"
                 ],
                 "AllowedScopes": [
                     "AdminClientId_api"
                 ],
                 "AllowedCorsOrigins": [
-                    "http://localhost:7000"
+                    "https://authadminapi.magaliti.com"
                 ]
             }
         ]
