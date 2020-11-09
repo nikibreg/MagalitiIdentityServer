@@ -81,7 +81,7 @@
             {
                 "ClientId": "AdminClientId",
                 "ClientName": "AdminClientId",
-                "ClientUri": "https://localhost:6000",
+                "ClientUri": "http://localhost:6000",
                 "AllowedGrantTypes": [
                     "authorization_code"
                 ],
@@ -92,14 +92,14 @@
                     }
                 ],
                 "RedirectUris": [
-                    "https://localhost:6000/signin-oidc"
+                    "http://localhost:6000/signin-oidc"
                 ],
-                "FrontChannelLogoutUri": "https://localhost:6000/signout-oidc",
+                "FrontChannelLogoutUri": "http://localhost:6000/signout-oidc",
                 "PostLogoutRedirectUris": [
-                    "https://localhost:6000/signout-callback-oidc"
+                    "http://localhost:6000/signout-callback-oidc"
                 ],
                 "AllowedCorsOrigins": [
-                    "https://localhost:6000"
+                    "http://localhost:6000"
                 ],
                 "AllowedScopes": [
                     "openid",
@@ -117,13 +117,13 @@
                 "RequireClientSecret": false,
                 "RequirePkce": true,
                 "RedirectUris": [
-                    "https://localhost:7000/swagger/oauth2-redirect.html"
+                    "http://localhost:7000/swagger/oauth2-redirect.html"
                 ],
                 "AllowedScopes": [
                     "AdminClientId_api"
                 ],
                 "AllowedCorsOrigins": [
-                    "https://localhost:7000"
+                    "http://localhost:7000"
                 ]
             }
         ]
